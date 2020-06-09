@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><base href="/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>[HALT CATCH FIRE] – Page 2 – INSPECT | DEBUG | REFACTOR | OPTIMIZE</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://haltcatchfireblog.github.io/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="bootstrap-css" href="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/css/bootstrap.css" type="text/css" media="all"><link rel="stylesheet" id="font-awesome-css" href="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/font-awesome/css/font-awesome.min.css" type="text/css" media="all"><link rel="stylesheet" id="nisarg-style-css" href="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/style.css" type="text/css" media="all"><style id="nisarg-style-inline-css" type="text/css">
+	/* Color Scheme */
+
+	/* Accent Color */
+
+	a:active,
+	a:hover,
+	a:focus {
+	    color: #009688;
+	}
+
+	.main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
+		color: #009688;
+	}
+	
+	.main-navigation .primary-menu .sub-menu .current_page_item > a,
+	.main-navigation .primary-menu .sub-menu .current-menu-item > a {
+		color: #009688;
+	}
+	.main-navigation .primary-menu .sub-menu .current_page_item > a:hover,
+	.main-navigation .primary-menu .sub-menu .current_page_item > a:focus,
+	.main-navigation .primary-menu .sub-menu .current-menu-item > a:hover,
+	.main-navigation .primary-menu .sub-menu .current-menu-item > a:focus {
+		background-color: #fff;
+		color: #009688;
+	}
+	.dropdown-toggle:hover,
+	.dropdown-toggle:focus {
+		color: #009688;
+	}
+
+	@media (min-width: 768px){
+		.main-navigation .primary-menu > .current_page_item > a,
+		.main-navigation .primary-menu > .current_page_item > a:hover,
+		.main-navigation .primary-menu > .current_page_item > a:focus,
+		.main-navigation .primary-menu > .current-menu-item > a,
+		.main-navigation .primary-menu > .current-menu-item > a:hover,
+		.main-navigation .primary-menu > .current-menu-item > a:focus,
+		.main-navigation .primary-menu > .current_page_ancestor > a,
+		.main-navigation .primary-menu > .current_page_ancestor > a:hover,
+		.main-navigation .primary-menu > .current_page_ancestor > a:focus,
+		.main-navigation .primary-menu > .current-menu-ancestor > a,
+		.main-navigation .primary-menu > .current-menu-ancestor > a:hover,
+		.main-navigation .primary-menu > .current-menu-ancestor > a:focus {
+			border-top: 4px solid #009688;
+		}
+		.main-navigation ul ul a:hover,
+		.main-navigation ul ul a.focus {
+			color: #fff;
+			background-color: #009688;
+		}
+	}
+
+	.main-navigation .primary-menu > .open > a, .main-navigation .primary-menu > .open > a:hover, .main-navigation .primary-menu > .open > a:focus {
+		color: #009688;
+	}
+
+	.main-navigation .primary-menu > li > .sub-menu  li > a:hover,
+	.main-navigation .primary-menu > li > .sub-menu  li > a:focus {
+		color: #fff;
+		background-color: #009688;
+	}
+
+	@media (max-width: 767px) {
+		.main-navigation .primary-menu .open .sub-menu > li > a:hover {
+			color: #fff;
+			background-color: #009688;
+		}
+	}
+
+	.sticky-post{
+	    background: #009688;
+	    color:white;
+	}
+	
+	.entry-title a:hover,
+	.entry-title a:focus{
+	    color: #009688;
+	}
+
+	.entry-header .entry-meta::after{
+	    background: #009688;
+	}
+
+	.fa {
+		color: #009688;
+	}
+
+	.btn-default{
+		border-bottom: 1px solid #009688;
+	}
+
+	.btn-default:hover, .btn-default:focus{
+	    border-bottom: 1px solid #009688;
+	    background-color: #009688;
+	}
+
+	.nav-previous:hover, .nav-next:hover{
+	    border: 1px solid #009688;
+	    background-color: #009688;
+	}
+
+	.next-post a:hover,.prev-post a:hover{
+	    color: #009688;
+	}
+
+	.posts-navigation .next-post a:hover .fa, .posts-navigation .prev-post a:hover .fa{
+	    color: #009688;
+	}
+
+
+	#secondary .widget-title::after{
+		background-color: #009688;
+	    content: "";
+	    position: absolute;
+	    width: 50px;
+	    display: block;
+	    height: 4px;    
+	    bottom: -15px;
+	}
+
+	#secondary .widget a:hover,
+	#secondary .widget a:focus{
+		color: #009688;
+	}
+
+	#secondary .widget_calendar tbody a {
+	    background-color: #009688;
+	    color: #fff;
+	    padding: 0.2em;
+	}
+
+	#secondary .widget_calendar tbody a:hover{
+	    background-color: #009688;
+	    color: #fff;
+	    padding: 0.2em;
+	}	
+
+</style><link rel="stylesheet" id="nisarggooglefonts-css" href="//fonts.googleapis.com/css?family=Lato:400,300italic,700%7CSource+Sans+Pro:400,400italic" type="text/css" media="all"><script type="text/javascript" src="https://haltcatchfireblog.github.io/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://haltcatchfireblog.github.io/wp-includes/js/jquery/jquery-migrate.min.js"></script><style type="text/css">
+        .site-header { background: ; }
+</style><style type="text/css" id="nisarg-header-css">
+					.site-header {
+				background: url(https://haltcatchfireblog.github.io/wp-content/uploads/2019/08/header-min.jpg) no-repeat scroll top;
+				background-size: cover;
+			}
+			@media (min-width: 320px) and (max-width: 359px ) {
+				.site-header {
+					height: 40px;
+				}
+			}
+			@media (min-width: 360px) and (max-width: 767px ) {
+				.site-header {
+					height: 45px;
+				}
+			}
+			@media (min-width: 768px) and (max-width: 979px ) {
+				.site-header {
+					height: 96px;
+				}
+			}
+			@media (min-width: 980px) and (max-width: 1279px ){
+				.site-header {
+					height: 122px;
+				}
+			}
+			@media (min-width: 1280px) and (max-width: 1365px ){
+				.site-header {
+					height: 160px;
+				}
+			}
+			@media (min-width: 1366px) and (max-width: 1439px ){
+				.site-header {
+					height: 170px;
+				}
+			}
+			@media (min-width: 1440px) and (max-width: 1599px ) {
+				.site-header {
+					height: 180px;
+				}
+			}
+			@media (min-width: 1600px) and (max-width: 1919px ) {
+				.site-header {
+					height: 200px;
+				}
+			}
+			@media (min-width: 1920px) and (max-width: 2559px ) {
+				.site-header {
+					height: 240px;
+				}
+			}
+			@media (min-width: 2560px)  and (max-width: 2879px ) {
+				.site-header {
+					height: 320px;
+				}
+			}
+			@media (min-width: 2880px) {
+				.site-header {
+					height: 360px;
+				}
+			}
+			.site-header{
+				-webkit-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+		    	-moz-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+		    	-o-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+		    	box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+			}
+					.site-title,
+			.site-description {
+				color: #fff;
+			}
+			.site-title::after{
+				background: #fff;
+				content:"";
+			}
+				</style></head><body class="home blog paged paged-2">
+<div id="page" class="hfeed site">
+<header id="masthead" role="banner"><nav id="site-navigation" class="main-navigation navbar-fixed-top navbar-left" role="navigation"><div class="container" id="navigation_menu">
+			<div class="navbar-header">
+									<button type="button" class="menu-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+									<a class="navbar-brand" href="https://haltcatchfireblog.github.io/">[HALT CATCH FIRE]</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-top-menu" class="primary-menu"><li id="menu-item-2847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2847"><a href="https://www.haltcatchfire.com">Blog</a></li>
+<li id="menu-item-2849" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2849"><a href="https://haltcatchfireblog.github.io/category/memes/">Memes</a></li>
+<li id="menu-item-2848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2848"><a href="https://haltcatchfireblog.github.io/whoami/">Whoami</a></li>
+</ul></div>		</div>
+	</nav><div id="cc_spacer"></div>  
+	<div class="site-header">
+		<div class="site-branding">
+			<a class="home-link" href="https://haltcatchfireblog.github.io/" title="[HALT CATCH FIRE]" rel="home">
+				<h1 class="site-title">[HALT CATCH FIRE]</h1>
+				<h2 class="site-description">INSPECT | DEBUG | REFACTOR | OPTIMIZE</h2>
+			</a>
+		</div>
+	</div>
+</header><div id="content" class="site-content">
+
+	<div class="container">
+		<div class="row">
+			<div id="primary" class="col-md-12 content-area">
+				<main id="main" class="site-main" role="main"><article id="post-1236" class="post-content post-1236 post type-post status-publish format-standard has-post-thumbnail hentry category-blogging category-life-lessons category-personal-finance tag-gratitude tag-ideas"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/wrapping-up-the-year-with-gratitude/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2019/02/wrapping_up_the_year_with_gratitude-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Wrapping up the year with gratitude</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/wrapping-up-the-year-with-gratitude/" rel="bookmark">Wrapping up the year with gratitude</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/wrapping-up-the-year-with-gratitude/" title="15:45" rel="bookmark"><time class="entry-date" datetime="2018-12-29T15:45:22+02:00" pubdate>2018-12-29 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/wrapping-up-the-year-with-gratitude/#comments" class="comments-link">15 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>Howdy fellas! Long time no see. As anyone can tell, this second half of the year wasn’t my most productive period in terms of blogging and otherwise. Don’t get me wrong, I am not apologizing and have no regrets. Many times I exchanged “blogging time” for simply hanging out with my wife or playing late with my daughters. Life is about priorities and we all have the same scarce resource of time which we decide where to invest. After all,…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/wrapping-up-the-year-with-gratitude/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1215" class="post-content post-1215 post type-post status-publish format-standard has-post-thumbnail hentry category-coders-of-finance category-early-retirement category-personal-finance tag-indeedably tag-coders"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/coders-of-finance-in%c2%b7deed%c2%b7a%c2%b7bly/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2018/03/coders_of_finance_kickoff-1-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Coders of Finance – { in·deed·a·bly }</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/coders-of-finance-in%c2%b7deed%c2%b7a%c2%b7bly/" rel="bookmark">Coders of Finance – { in·deed·a·bly }</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/coders-of-finance-in%c2%b7deed%c2%b7a%c2%b7bly/" title="12:00" rel="bookmark"><time class="entry-date" datetime="2018-12-07T12:00:47+02:00" pubdate>2018-12-07 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/coders-of-finance-in%c2%b7deed%c2%b7a%c2%b7bly/#comments" class="comments-link">7 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>Welcome back geeky FIRE seekers. A long time has passed since the last episode of this series. Some folks even asked me if it is over. The truth is that this series takes place in a special corner of my heart and I don’t really plan on killing it before I stop blogging, so please calm down. Today I brought you another fellow European and London based blogger who shied away so far from talking about the topic of programming in…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/coders-of-finance-in%c2%b7deed%c2%b7a%c2%b7bly/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1175" class="post-content post-1175 post type-post status-publish format-standard has-post-thumbnail hentry category-early-retirement category-life-lessons category-personal-finance tag-dead tag-finance tag-insurance"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/deadly-finance/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2019/02/deadly_finance-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Deadly Finance</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/deadly-finance/" rel="bookmark">Deadly Finance</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/deadly-finance/" title="12:00" rel="bookmark"><time class="entry-date" datetime="2018-11-05T12:00:01+02:00" pubdate>2018-11-05 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/deadly-finance/#comments" class="comments-link">8 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>We are already done with the triduum of Halloween, All Saints’ Day and All Souls’ Day. While the Halloween part got more and more popularity at our ends only in recent years the other two days were always the occasion for us to visit the graves of our loved ones. This melancholic time of the year is perfect for remembering and reflection. As the weather turns colder, the days darker, and nature slowly slips into its hibernated state our thoughts…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/deadly-finance/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1132" class="post-content post-1132 post type-post status-publish format-standard has-post-thumbnail hentry category-blogging category-coders-of-finance category-personal-finance tag-10-questions tag-1500-days"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/10-questions-with-mr-1500/" rel="bookmark">
+            <img width="900" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2019/02/10_q-900x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">10 Questions with Mr. 1500</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/10-questions-with-mr-1500/" rel="bookmark">10 Questions with Mr. 1500</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/10-questions-with-mr-1500/" title="11:25" rel="bookmark"><time class="entry-date" datetime="2018-10-26T11:25:38+02:00" pubdate>2018-10-26 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/10-questions-with-mr-1500/#comments" class="comments-link">2 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>“Hey, look at him, he is alive, the guy who stated that he will get back on track with posting then disappeared.” I know, I know and you are right. I should have been waking up when September ends. And now it is almost the end of October and all I published is a rant about the Suze Orman phenomenon. She apparently “changed” her mind, btw. So what happened? Well, I try to stick with a new writing schedule and…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/10-questions-with-mr-1500/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1096" class="post-content post-1096 post type-post status-publish format-standard has-post-thumbnail hentry category-early-retirement category-personal-finance tag-fire tag-suze"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/thanks-for-your-concern-suze-but-the-fire-movement-is-fine/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2019/02/thanks-for-your-concern-suze-but-the-fire-movement-is-fine-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Thanks for your concern Suze, but the FIRE movement is fine</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/thanks-for-your-concern-suze-but-the-fire-movement-is-fine/" rel="bookmark">Thanks for your concern Suze, but the FIRE movement is fine</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/thanks-for-your-concern-suze-but-the-fire-movement-is-fine/" title="11:55" rel="bookmark"><time class="entry-date" datetime="2018-10-05T11:55:53+02:00" pubdate>2018-10-05 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/thanks-for-your-concern-suze-but-the-fire-movement-is-fine/#comments" class="comments-link">12 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>Seven years have passed since Pete Adeney alias Mr. Money Mustache started his blog and Mustachianism was born. He was not the one who started the FIRE movement itself but definitely brought the idea to more people than anyone before. The roots of the concept of FIRE are older than many of us imagine. It is not a new invention, but only the recent years brought higher popularity and broader media coverage. Like all other great movements, it also had…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/thanks-for-your-concern-suze-but-the-fire-movement-is-fine/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1068" class="post-content post-1068 post type-post status-publish format-standard has-post-thumbnail hentry category-personal-finance"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/wake-me-up-when-september-ends/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2018/09/september-1-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Wake me up when September ends</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/wake-me-up-when-september-ends/" rel="bookmark">Wake me up when September ends</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/wake-me-up-when-september-ends/" title="12:00" rel="bookmark"><time class="entry-date" datetime="2018-09-26T12:00:27+02:00" pubdate>2018-09-26 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/wake-me-up-when-september-ends/#comments" class="comments-link">6 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>Time is running fast. Summer is gone. Six weeks passed since my last post and (despite some folks thought so) I haven’t thrown in the towel yet. While I am back in business still not rolling at full speed. It is not that simple after such a long blogging hiatus but I felt it right to write a quick heads-up post as the first step of getting back on track. Blogiversary If that “World’s Worst Blogger” contest would be real,…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/wake-me-up-when-september-ends/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1040" class="post-content post-1040 post type-post status-publish format-standard has-post-thumbnail hentry category-early-retirement category-personal-finance tag-fire tag-projects"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/staring-into-the-fire/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2018/08/staring_into_fire-1-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Staring into the FIRE</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/staring-into-the-fire/" rel="bookmark">Staring into the FIRE</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/staring-into-the-fire/" title="11:34" rel="bookmark"><time class="entry-date" datetime="2018-08-10T11:34:01+02:00" pubdate>2018-08-10 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/staring-into-the-fire/#comments" class="comments-link">13 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>Back in the time I already wrote about my thoughts on the fear of getting bored in retirement. I did not change my views but as keep seeing posts popping up about the topic I had a think what I would do after reaching FIRE. Of course besides the travel the world and spend most of my time with family general ideas. So here is it, check out my non-complete list of ideas for having fun in retirement. Art Anyone…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/staring-into-the-fire/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-940" class="post-content post-940 post type-post status-publish format-standard has-post-thumbnail hentry category-personal-finance category-vacation tag-family tag-travel tag-vacation"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/saving-money-on-vacation-with-family-and-friends/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2018/08/vacation-1-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Saving money on vacation with family and friends</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/saving-money-on-vacation-with-family-and-friends/" rel="bookmark">Saving money on vacation with family and friends</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/saving-money-on-vacation-with-family-and-friends/" title="10:02" rel="bookmark"><time class="entry-date" datetime="2018-08-02T10:02:55+02:00" pubdate>2018-08-02 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/saving-money-on-vacation-with-family-and-friends/#comments" class="comments-link">2 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>Can you believe that it is already August? Time seems running fast these days and while the weather is crazy this year, it is summer at its fullest. You know that from people periodically disappearing for a couple of weeks and they return happier and tanner than before. Also, there are posts all over the internet popping up everywhere about perfect backpacking methods, must have camping appliances, and vacation saving tips. As I was thinking about what wisdom can I…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/saving-money-on-vacation-with-family-and-friends/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-1000" class="post-content post-1000 post type-post status-publish format-standard hentry category-blogging category-personal-finance tag-msf tag-random-questions"><header class="entry-header"><span class="screen-reader-text">Participating in the Random Questions series</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/participating-in-the-random-questions-series/" rel="bookmark">Participating in the Random Questions series</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/participating-in-the-random-questions-series/" title="10:00" rel="bookmark"><time class="entry-date" datetime="2018-07-20T10:00:07+02:00" pubdate>2018-07-20 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/participating-in-the-random-questions-series/#comments" class="comments-link">2 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>In my Coders Of Finance series I am the one who knocks asks questions, but interestingly there are occasions when others are curious about my answers to some of their questions. At first, these came only in form of spam comments and emails asking if I am interested in some Ponzi schemes, free viagra samples or services I definitely don’t need. Then my first legit indulgement into the interviewing world happened by taking the BoaS Question Series over at BudgetOnAStick.com (beware,…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/participating-in-the-random-questions-series/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><article id="post-983" class="post-content post-983 post type-post status-publish format-standard has-post-thumbnail hentry category-consumerism category-early-retirement category-personal-finance tag-europe tag-fire tag-serbia"><div class="featured-image">
+        	        	<a href="https://haltcatchfireblog.github.io/can-your-ideal-fireplace-be-in-europe/" rel="bookmark">
+            <img width="1038" height="576" src="https://haltcatchfireblog.github.io/wp-content/uploads/2018/07/fireplace-1-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt=""></a>         
+        </div>
+        
+	<header class="entry-header"><span class="screen-reader-text">Can your ideal FIREplace be in Europe?</span>
+
+					<h2 class="entry-title">
+				<a href="https://haltcatchfireblog.github.io/can-your-ideal-fireplace-be-in-europe/" rel="bookmark">Can your ideal FIREplace be in Europe?</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://haltcatchfireblog.github.io/can-your-ideal-fireplace-be-in-europe/" title="11:00" rel="bookmark"><time class="entry-date" datetime="2018-07-13T11:00:39+02:00" pubdate>2018-07-13 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://haltcatchfireblog.github.io/author/hcf/" title="View all posts by [HCF]" rel="author">[HCF]</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://haltcatchfireblog.github.io/can-your-ideal-fireplace-be-in-europe/#comments" class="comments-link">8 comments</a></h5>
+		</div>
+			</header><div class="entry-summary">
+		<p>First of all, by FIREplace I meant the place where you retire to. I bet your instinctive answer to this question would be a huge YES. Also, probably you are already envisioning yourself enjoying the sun on a sandy beach in Spain, France or Italy. Or maybe you prefer indulging into the great fun what a capital city like London could offer? Or even would you just spend your time wandering around in the Alps in Switzerland or Germany? Riding a…</p>
+<p class="read-more"><a class="btn btn-default" href="https://haltcatchfireblog.github.io/can-your-ideal-fireplace-be-in-europe/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+	</div>
+
+	<footer class="entry-footer"></footer></article><nav class="navigation posts-navigation" role="navigation"><h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links">
+
+			<div class="row">
+								<div class="col-md-6 next-post">
+				<a href="https://haltcatchfireblog.github.io/"><i class="fa fa-angle-double-left"></i>
+NEWER POSTS</a>				</div>
+							
+			
+					
+				<div class="col-md-6 prev-post">		
+				<a href="https://haltcatchfireblog.github.io/page/3/">OLDER POST<i class="fa fa-angle-double-right"></i></a>				</div>
+								</div>		
+		</div>
+	</nav></main></div>
+					</div>
+	</div>
+		</div>
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+			© 2020			<span class="sep"> | </span>
+			www.HaltCatchFire.com
+		</div>
+	</footer></div>
+<script type="text/javascript" src="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/js/bootstrap.js"></script><script type="text/javascript" src="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/js/navigation.js"></script><script type="text/javascript" src="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/js/skip-link-focus-fix.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script><script type="text/javascript" src="https://haltcatchfireblog.github.io/wp-content/themes/nisarg/js/nisarg.js"></script></body></html>
