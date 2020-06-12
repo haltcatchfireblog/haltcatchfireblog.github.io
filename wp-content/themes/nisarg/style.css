@@ -149,6 +149,7 @@ img.wp-post-image {height: auto;}
 .comments-area {padding: 1.5em 4em;background: white;overflow: hidden;}
 .post-comments {border-radius: 0px;border: none;padding: 2em;overflow: hidden;}
 .post-comments .comments-area {background: white;padding: 1em 2em;overflow: hidden;box-shadow: none;}
+.no-comments {display: none;}
 .post-content hr {margin-top: 20px;margin-bottom: 20px;border-color: #b6b6b6;border-style: dotted;width: 100%;}
 .entry-content, .entry-header, .entry-meta, .entry-title, .entry-summary, .entry-footer {width: 100%;word-wrap: break-word;overflow: hidden;}
 .entry-summary, .entry-content {color: #424242;}
